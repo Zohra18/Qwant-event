@@ -20,18 +20,18 @@ div{
 
 /* title */
 .venements-venir{
-  color: grey;
+  color: #888c8d;
   font-family: Helvetica;
   font-weight: normal;
-  font-size: 24px;
+  font-size: 23px;
 }
 
 /* 3 event divs */
 .background{
   margin-bottom: 18px;
-  width: 320px;
+  width: 330px;
   height: 100px;
-  box-shadow: 0 0 1px 1px #f2f1f2;
+  box-shadow: 0 0 2px 2px #f2f1f2;
   padding: 3%;
 }
 
@@ -50,11 +50,13 @@ div{
 
 .bold-day{
   font-weight: bold;
-  font-size: 36px;
-  margin-right: 2px;
+  font-size: 35px;
+  margin-right: 6px;
+  font-family: Helvetica;
 }
 .month, .years{
   font-size: 12px;
+  font-weight: bold;
 }
 .layer{
   width: 75%;
@@ -64,32 +66,14 @@ div{
   flex-direction: column;
   justify-content: center;
 }
-.mask{
-  text-align: center;
-  width: 25%;
-  font-size: 9px;
-  color: white;
-  font-weight: bold;
-}
-.concert, .emission-tv{
-  padding: 2px 6px;
-  border-radius: 20px;
-}
 
-.concert{
-  background-color: #5662f6;
-}
-
-.emission-tv{
-  background-color: #423b98;
-}
 /* area, prices */
 .lieu-prix div{
   margin: 2px 0;
 }
 
 .Place, .Tarif{
-  color: #969696;
+  color: #9a9a9a;
   font-size: 14px;
 }
 
@@ -100,6 +84,7 @@ div{
 
 .Titre{
   font-weight: bold;
+  font-size: 16px;
 }
 /* liens comparatif */
 .liens-comparatif{
