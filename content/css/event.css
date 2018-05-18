@@ -1,9 +1,8 @@
 html, body{
   margin: 0;
   padding: 0;
-  background-color: #AAA;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 div{
@@ -94,3 +93,9 @@ div{
 
 .liens-comparatif:hover{
   text-decoration: underline;
+}
+
+iframe{
+  height: 500px;
+  width: 550px;
+}

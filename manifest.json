@@ -1,0 +1,46 @@
+{
+  "manifest_version": 2,
+  "name": "Qwant Event",
+  "version": "1.0",
+  "description": "Appli de listage d'événements en fonction de la géolocalisation(?) et/ou des préférences de l'utilisateur",
+  "background":{
+    "page": "content/html/background.html",
+    "persistent": true
+  },
+
+  "icons": {
+    "48": "content/icons/placeholder-48.png"
+  },
+  "permissions":[
+    "activeTab",
+    "storage",
+    "tabs",
+    "https://www.qwant.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://www.qwant.com/*"],
+      "js": [
+        "content/js/event.js"
+      ]
+    },
+    {
+      "matches": ["https://www.qwant.com/*"],
+      "css": [
+        "content/css/event.css"
+      ]
+    }
+  ],
+
+  "browser_action": {
+    "default_icon": "content/icons/placeholder-32.png",
+    "default_title": "Qwant Event",
+    "default_popup": "content/popup/popup.html"
+  },
+
+  "web_accessible_resources": [
+    "content/html/background.html",
+    "content/css/event.css",
+    "content/js/event.js"
+  ]
+}
